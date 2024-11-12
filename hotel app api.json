@@ -1,0 +1,224 @@
+{
+  "uuid": "b5e87d1d-4222-4d92-a035-62b3bb8413bb",
+  "lastMigration": 32,
+  "name": "Hotel app api",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3001,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "e71571c2-f995-41de-97d6-17e2605cfc78",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "reservation",
+      "responses": [
+        {
+          "uuid": "8f54f5f5-a57b-4dea-8a69-2ea99d2f576a",
+          "body": "[\r\n  {\r\n    \"id\": \"3\",\r\n    \"checkInDate\": \"2024-09-12\",\r\n    \"checkOutDate\": \"2024-09-15\",\r\n    \"guestName\": \"Arjun\",\r\n    \"guestEmail\": \"arjun@example.com\",\r\n    \"roomNumber\": 201\r\n  },\r\n  {\r\n    \"id\": \"4\",\r\n    \"checkInDate\": \"2024-09-14\",\r\n    \"checkOutDate\": \"2024-09-16\",\r\n    \"guestName\": \"Priya\",\r\n    \"guestEmail\": \"priya@example.com\",\r\n    \"roomNumber\": 202\r\n  },\r\n  {\r\n    \"id\": \"5\",\r\n    \"checkInDate\": \"2024-09-18\",\r\n    \"checkOutDate\": \"2024-09-20\",\r\n    \"guestName\": \"Karan\",\r\n    \"guestEmail\": \"karan@example.com\",\r\n    \"roomNumber\": 203\r\n  },\r\n  {\r\n    \"id\": \"6\",\r\n    \"checkInDate\": \"2024-09-20\",\r\n    \"checkOutDate\": \"2024-09-22\",\r\n    \"guestName\": \"Saanvi\",\r\n    \"guestEmail\": \"saanvi@example.com\",\r\n    \"roomNumber\": 204\r\n  },\r\n  {\r\n    \"id\": \"7\",\r\n    \"checkInDate\": \"2024-09-25\",\r\n    \"checkOutDate\": \"2024-09-28\",\r\n    \"guestName\": \"Rohit\",\r\n    \"guestEmail\": \"rohit@example.com\",\r\n    \"roomNumber\": 205\r\n  }\r\n]\r\n\r\n",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "80dccdcc-e0d9-4ded-a6d8-b6141097942f",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "reservation/:id",
+      "responses": [
+        {
+          "uuid": "4f8b254f-da55-4ff0-8875-66d081cca7a9",
+          "body": "{\r\n  \"id\": \"1\",\r\n  \"checkInDate\": \"2024-09-08\",\r\n  \"checkOutDate\": \"2024-09-09\",\r\n  \"guestName\": \"Vedica\",\r\n  \"guestEmail\": \"ved@sonata-software.com\",\r\n  \"roomNumber\": 103\r\n}\r\n\r\n",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "2b1644b0-84da-461f-9009-d1e2d8bb3bb0",
+      "type": "http",
+      "documentation": "",
+      "method": "delete",
+      "endpoint": "reservation/:id",
+      "responses": [
+        {
+          "uuid": "021c5939-635e-4093-97a8-c86aa604c831",
+          "body": "",
+          "latency": 0,
+          "statusCode": 204,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "35ce3ff0-ea8f-4aad-8d75-07f60d7ebbd4",
+      "type": "http",
+      "documentation": "",
+      "method": "put",
+      "endpoint": "reservation/:id",
+      "responses": [
+        {
+          "uuid": "a69abc5b-6e58-4f22-bc12-a53a023cb665",
+          "body": "{\r\n    \"id\": \"1\",\r\n    \"checkInDate\": \"2024-09-08\",\r\n    \"checkOutDate\": \"2024-09-07\",\r\n    \"guestName\": \"Vedica\",\r\n    \"guestEmail\": \"ved@sonata-software.com\",\r\n    \"roomNumber\": 103\r\n  }",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "8124f07a-a170-4acc-8d4b-477ed98d45e6",
+      "type": "http",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "reservation",
+      "responses": [
+        {
+          "uuid": "2a0f53a8-922a-4766-a8b9-8df148df70c6",
+          "body": "",
+          "latency": 0,
+          "statusCode": 201,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "e71571c2-f995-41de-97d6-17e2605cfc78"
+    },
+    {
+      "type": "route",
+      "uuid": "80dccdcc-e0d9-4ded-a6d8-b6141097942f"
+    },
+    {
+      "type": "route",
+      "uuid": "2b1644b0-84da-461f-9009-d1e2d8bb3bb0"
+    },
+    {
+      "type": "route",
+      "uuid": "35ce3ff0-ea8f-4aad-8d75-07f60d7ebbd4"
+    },
+    {
+      "type": "route",
+      "uuid": "8124f07a-a170-4acc-8d4b-477ed98d45e6"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    },
+    {
+      "key": "Access-Control-Allow-Methods",
+      "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+    },
+    {
+      "key": "Access-Control-Allow-Headers",
+      "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": [],
+  "callbacks": []
+}
